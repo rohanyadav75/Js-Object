@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        let student={
+            firstname:"rohan",
+            lastname:"yadav",
+            class:"TYIT",
+            rollno:556,
+            marks:[41,56,78,98,32],
+            percentage:undefined,
+            calculatePercentage:function(){
+                let totalmark=0;
+                let numofSubject=this.marks.length;
+                for(let i=0;i<numofSubject;i++){
+                    totalmark+=this.marks[i];
+                }
+                this.percentage=(totalmark/numofSubject)+"%";
+
+            }
+
+        };
+
+       /* let person=[];
+        person.push({
+            firstname:"rahul",
+            lastname:"kumar",
+            class:"TYCS",
+            rollno:555,
+            0:45,
+            toString:function(){
+                console.log(this.firstname);
+        }
+    });*/
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
